@@ -1,0 +1,51 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: "Enero 2024 - Actual",
+        title: "Desarrollador .NET - SEPROBAN",
+        description: "Responsable de los sistemas basados en tecnología .NET de la empresa. Optimizaciones, Correcciones y Mejoras en los procesos de Desarrollo de Sotware de la empresa para obtener certificación ISO 27001",
+        link: "",
+    },
+    {
+        date: "Febrero 2022 - Octubre 2024",
+        title: "Desarrollador .NET - SEPROBAN",
+        description: "",
+        link: "",
+    },
+    {
+        date: "Enero 2024 - Actual",
+        title: "Desarrollador .NET - SEPROBAN",
+        description: "",
+        link: "",
+    },
+    {
+        date: "Enero 2024 - Actual",
+        title: "Desarrollador .NET - SEPROBAN",
+        description: "",
+        link: "",
+    },
+    {
+        date: "Enero 2024 - Actual",
+        title: "Desarrollador .NET - SEPROBAN",
+        description: "",
+        link: "",
+    },
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">       
+    
+    {
+        EXPERIENCE.map(e => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...e}/>
+            </li>
+        ))
+    }
+    
+</ol>
+
+
+
